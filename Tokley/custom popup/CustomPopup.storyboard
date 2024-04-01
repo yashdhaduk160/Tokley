@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Outer Space.ttf">
+            <string>Outer-Space</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Result-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Result" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="Result" customModule="TicTacToe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OqR-TA-Pfe">
+                                <rect key="frame" x="46.666666666666657" y="326" width="300" height="200"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vecteezy_alien-red-planet-landscape-cartoon-background_23165682" translatesAutoresizingMaskIntoConstraints="NO" id="vto-rs-Wik">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's a draw" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ClH-SX-dRs">
+                                        <rect key="frame" x="15" y="15" width="270" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Zwp-lu-g7H"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Outer-Space" family="Outer Space" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDi-vd-fVp">
+                                        <rect key="frame" x="15" y="145" width="270" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="UmJ-UN-q6u"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Outer-Space" family="Outer Space" pointSize="13"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="play again" backgroundImage="Image 1"/>
+                                        <connections>
+                                            <action selector="btn_play_again:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Grk-MG-Vhe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="vto-rs-Wik" secondAttribute="bottom" id="53Z-Yg-rig"/>
+                                    <constraint firstItem="ClH-SX-dRs" firstAttribute="top" secondItem="OqR-TA-Pfe" secondAttribute="top" constant="15" id="9nb-Kh-RF1"/>
+                                    <constraint firstAttribute="height" constant="200" id="JaY-cK-xVf"/>
+                                    <constraint firstAttribute="width" constant="300" id="JzY-ye-quA"/>
+                                    <constraint firstItem="vto-rs-Wik" firstAttribute="leading" secondItem="OqR-TA-Pfe" secondAttribute="leading" id="S5m-bM-944"/>
+                                    <constraint firstAttribute="trailing" secondItem="ClH-SX-dRs" secondAttribute="trailing" constant="15" id="T73-Fk-DpT"/>
+                                    <constraint firstItem="ClH-SX-dRs" firstAttribute="leading" secondItem="OqR-TA-Pfe" secondAttribute="leading" constant="15" id="XeD-km-Zh7"/>
+                                    <constraint firstAttribute="trailing" secondItem="nDi-vd-fVp" secondAttribute="trailing" constant="15" id="ZZR-sS-69G"/>
+                                    <constraint firstItem="vto-rs-Wik" firstAttribute="top" secondItem="OqR-TA-Pfe" secondAttribute="top" id="f9L-0P-EmW"/>
+                                    <constraint firstAttribute="bottom" secondItem="nDi-vd-fVp" secondAttribute="bottom" constant="15" id="hLZ-a0-cxm"/>
+                                    <constraint firstAttribute="trailing" secondItem="vto-rs-Wik" secondAttribute="trailing" id="pCf-mM-cdv"/>
+                                    <constraint firstItem="nDi-vd-fVp" firstAttribute="leading" secondItem="OqR-TA-Pfe" secondAttribute="leading" constant="15" id="uZW-Xy-NOF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="OqR-TA-Pfe" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="IA2-LJ-mcX"/>
+                            <constraint firstItem="OqR-TA-Pfe" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="n8p-kN-Qxj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lbl_result" destination="ClH-SX-dRs" id="RRr-wd-Wma"/>
+                        <outlet property="view_popup" destination="OqR-TA-Pfe" id="Jaj-j7-HC5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image 1" width="1808" height="1808"/>
+        <image name="vecteezy_alien-red-planet-landscape-cartoon-background_23165682" width="1920" height="750"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
